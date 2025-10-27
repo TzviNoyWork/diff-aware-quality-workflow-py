@@ -62,3 +62,8 @@ def divide(a, b):
     if b == 0:
         raise ValueError("Cannot divide by zero")
     return a / b
+
+def power(a, b):
+    """Calculate a to the power of b."""
+    unused_var = "oops"  # This will trigger F841
+    return a ** b
